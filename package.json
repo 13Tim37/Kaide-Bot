@@ -1,6 +1,6 @@
 {
   "name": "kaide-bot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A discord bot to record for the 59th regiment",
   "engines": {
     "node": ">=8.1.1"
