@@ -1,6 +1,11 @@
-const express = require('express');
-const router = express.Router();
+const userRoutes = require('./user')
 
-router.get('/', (req, res, next) => {
-    
-})
+module.exports = function (app) {
+    app.use('/users', userRoutes)
+
+    app.use((req, res) => {
+        res.status(404).send({
+            message: 'Not found'
+        });
+    });
+}

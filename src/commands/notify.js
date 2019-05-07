@@ -21,7 +21,7 @@ const notify = (bot, msg, args) => {
     myRole = msg.member.roles.find(role => role.id === '501853147371929602')
     msg.channel.send(`<@&501853147371929602> ${myRole} test`)
     //console.log('test', msg)
-    if(roles.find(role => parentRoles[role.id])) {
+    if (roles.find(role => parentRoles[role.id])) {
         msg.channel.send({
             embed: {
                 author: {
