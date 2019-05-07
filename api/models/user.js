@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
 const User = mongoose.model('User', { 
-    name: {
+    discordId: {
         type: String,
-        required: true,
-        unique: true
+        unique: true,
+        required: true
     },
     rank: {
         type: String,

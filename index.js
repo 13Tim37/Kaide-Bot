@@ -1,14 +1,11 @@
 require('dotenv').config()
 const Discord = require("discord.js")
 const package = require("./package.json")
-const mongoose = require("mongoose")
 const config = package.config
 
 const help = require('./src/commands/help')
 const poll = require('./src/commands/poll')
 const notify = require('./src/commands/notify')
-
-mongoose.connect(process.env.DATABASE_URL, { dbName: 'test', useNewUrlParser: true })
 
 const bot = new Discord.Client()
 
